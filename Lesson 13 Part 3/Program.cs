@@ -6,8 +6,9 @@ using System.Windows.Forms;
 
 namespace Lesson_13_Part_3
 {
-    static class Program
+    public static class Program
     {
+        public static MainForm mainform;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +17,9 @@ namespace Lesson_13_Part_3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            mainform = new MainForm();
+            Application.Run(mainform);
         }
     }
 }
